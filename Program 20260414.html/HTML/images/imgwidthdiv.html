@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <hi>Controlling Images Width</hi>
+    <hr />
+    <!-- by putting images all within a <div> -->
+    <!-- you can control and the images altogether -->
+    <!-- width in style is to control the width of the box -->
+    <!-- by using width = fit-content it automatic fit the box over all the images -->
+    <!-- you can also control it via pixel but you need to calculate it -->
+
+    <div
+      style="
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid black;
+        padding: 10px;
+        margin: auto;
+      "
+    >
+      <!-- padding is the space from images to the border -->
+      <!-- margin is the space from border to the outside -->
+
+      <img
+        src="../Resources/person1.jpg"
+        alt="alternative text"
+        height="275"
+        width="200"
+      />
+
+      <img
+        src="../Resources/person2.jpg"
+        alt="alternative text"
+        height="275"
+        width="200"
+      />
+
+      <img
+        src="../Resources/person3.jpg"
+        alt="John's images"
+        height="275"
+        width="200"
+      />
+    </div>
+  </body>
+</html>

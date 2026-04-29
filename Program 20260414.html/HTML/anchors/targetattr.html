@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- the target attribute directs if the page has to be same tab / windows or new onw -->
+    <!-- 4 possible values
+     1. _blank (opens the link in a new page)
+     2. _self (default value if ignored) (open the lnk o nsame window/ tab)
+     
+     There are 2 more options used/applicd with iframes
+
+     3. _parent
+     4. _tab
+-->
+
+    <!-- iframe = is a page within a page -->
+    <!-- it is used to display 3rd party content -->
+
+    <!-- _blank -->
+
+    <!-- loading the page on same window / tab -->
+    <a href="welcome.html">Welcome</a>
+    <a href="welcome.html" target="_self">Welcome</a>
+    <!-- the 2 command is the same -->
+
+    <br />
+
+    <!-- loading the page on NEW window / tab -->
+    <!-- practical example - you want to navigate to a 3rd parties page -->
+    <a href="welcome.html" target="_blank">Welcome with target blank</a>
+  </body>
+</html>

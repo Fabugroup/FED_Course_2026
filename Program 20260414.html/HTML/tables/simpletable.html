@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tables in HTML</h1>
+
+    <!-- tables use the following tags -->
+    <!-- 
+        1. tables
+        2. thead - table head section
+        3. tbody - table body section
+        4. tr - table row
+        5. th - table head
+        6. td - table data
+        7. tfoot - table footer
+    -->
+    <!-- the basic structure of the tables will be -->
+    <!-- 
+        <table> 
+            <thead></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+            -->
+
+    <!-- one row (header) and each represents a column-->
+    <!-- you can type by creating in shortcut "tr*3>td*3" -->
+    <!-- this create 3 rows with2 column -->
+
+    <!-- Name , Department, Salary -->
+
+    <div style="width: 60%; margin: auto; margin-right: auto">
+      <table style="border: 1px solid black; border-collapse: collapse">
+        <thead>
+          <tr>
+            <th
+              style="
+                background-color: cadetblue;
+                color: white;
+                border: 1px solid black;
+                padding: 10px;
+                text-decoration: underline;
+              "
+            >
+              Name
+            </th>
+            <th
+              style="
+                background-color: cadetblue;
+                color: white;
+                border: 1px solid black;
+                padding: 10px;
+                text-decoration: underline;
+              "
+            >
+              Salary
+            </th>
+            <th
+              style="
+                background-color: cadetblue;
+                color: white;
+                border: 1px solid black;
+                padding: 10px;
+                text-decoration: underline;
+              "
+            >
+              Department
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td style="border: 1px solid black; padding: 10px">$400</td>
+            <td style="border: 1px solid black; padding: 10px">Alex</td>
+            <td style="border: 1px solid black; padding: 10px">Marketing</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid black; padding: 10px">Sara</td>
+            <td style="border: 1px solid black; padding: 10px">Admin</td>
+            <td style="border: 1px solid black; padding: 10px">$700</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid black; padding: 10px">Engineering</td>
+            <td style="border: 1px solid black; padding: 10px">Mike</td>
+            <td style="border: 1px solid black; padding: 10px">$400</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        background-color: aqua;
+        border: 1px solid black;
+        height: 50vh;
+        width: 50vh;
+        margin: auto;
+      }
+
+      /* % width and height at body level is critical and do not use
+      use % for width and height with a parent for referemce */
+      .innerbox {
+        background-color: green;
+        border: 1px solid black;
+        height: 50%;
+        width: 50%;
+        margin: auto;
+      }
+
+      .innerbox2 {
+        background-color: yellow;
+        border: 1px solid black;
+        height: 50%;
+        width: 50%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      This is the outer box
+      <div class="innerbox">
+        This is the inner box
+
+        <div class="innerbox2"></div>
+      </div>
+    </div>
+  </body>
+</html>

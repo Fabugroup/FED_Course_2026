@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* paragraph element pecificity <0,0,1> */
+      p {
+        color: red;
+      }
+
+      /* .p is a class specificity <0,1,0> */
+      .p {
+        color: green;
+      }
+
+      /* #p is an ID  specificity <1,0,0> */
+      #p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Which one will pick</p>
+    <p>Specificity will takes precedance from inline, ID, class and to basic</p>
+    <p class="p">Lorem ipsum dolor sit amet.</p>
+    <p id="p">Lorem ipsum dolor sit amet.</p>
+    <p id="p" class="p">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

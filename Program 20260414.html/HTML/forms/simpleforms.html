@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Forms</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Working with Forms in HTML</h1>
+    <hr />
+    <!-- forms always are written in the tap level element <forms> -->
+    <h2>Please login</h2>
+    <form action="">
+      <!-- wrong way of labling the form input elements -->
+      <span>UserName:</span>
+      <input type="text" name="username" id="username" />
+
+      <br />
+
+      <span>Password</span>
+      <input type="password" name="pwd" id="password" />
+
+      <br />
+
+      <input type="submit" value="login" />
+    </form>
+    <hr />
+    <!-- the correct way to write a form-->
+    <h2>Please login</h2>
+    <form action="">
+      <!-- pair of label and input tag 
+         id of the input element in the 'for' attribute of label binds both element
+         id must be unique
+        -->
+      <label for="name">UserName</label>
+      <input type="text" name="username" id="name" />
+
+      <br />
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" />
+    </form>
+  </body>
+</html>
