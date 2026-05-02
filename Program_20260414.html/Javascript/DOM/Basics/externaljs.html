@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>"Intro to Javascript</title>
+    <!-- External Script-->
     <!-- thisi s where we call external js zero or more is files cn be linkee
     here -->
-
     <script src="external.js"></script>
+    <!-- Internal Script-->
+    <script>
+      console.log("Hello, i am the Internal Script fromt the head section");
+    </script>
   </head>
-  <body></body>
+  <body>
+    <!-- Internal Script-->
+    <script>
+      console.log("I am Internal Script written in the body", 1 + 1);
+    </script>
+  </body>
 </html>
