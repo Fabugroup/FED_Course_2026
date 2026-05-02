@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Element Content</title>
+  </head>
+  <body>
+    <h1 id="head">Working with DOM</h1>
+    <p id="content">This ia a paragraph</p>
+
+    <script>
+      // fetch the content of an element using a varible
+
+      const data = document.getElementById("content");
+      console.log(data.innerText);
+
+      // fetch the content of an element without using a variable
+      console.log(document.getElementById("head").innerText);
+    </script>
+  </body>
+</html>

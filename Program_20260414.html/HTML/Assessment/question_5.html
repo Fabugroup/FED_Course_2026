@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span id="result"></span>
+
+    <script>
+      let num1 = prompt("Enter first number:");
+      let num2 = prompt("Enter second number:");
+
+      num1 = parseFloat(num1);
+      num2 = parseFloat(num2);
+
+      let sum = num1 + num2;
+
+      document.getElementById("result").textContent = "Sum: " + sum;
+    </script>
+  </body>
+</html>
