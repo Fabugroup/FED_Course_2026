@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: lightblue;
+        color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* using @media are like breakpoint */
+
+      /* Mobile Display */
+      body::before {
+        content: "Mobile View";
+        font-size: 24px;
+      }
+
+      /* tablet display */
+      @media screen and (min-width: 768px) {
+        body::before {
+          content: "Tablet View";
+          font-size: 24px;
+        }
+        body {
+          background: green;
+        }
+      }
+
+      /* desktop display */
+      @media screen and (min-width: 1024px) {
+        body::before {
+          content: "Desktop View";
+          font-size: 24px;
+        }
+        body {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
