@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-css",
+  "name": "bootstrap-components",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "preact": "^10.29.1"
+    "preact": "^10.29.1",
+    "react-bootstrap": "^2.10.10"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.5",
