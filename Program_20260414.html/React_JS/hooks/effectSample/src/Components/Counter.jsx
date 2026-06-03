@@ -7,7 +7,9 @@ function Counter() {
 
   useEffect(() => {
     console.log("Effect Called:");
-  });
+    // update the document title when count changes
+    document.title = `You clicked ${count} times`;
+  }, [count]);
 
   return (
     <div>
