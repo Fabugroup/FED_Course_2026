@@ -1,6 +1,0 @@
-CJS  -- Common JS modules
-CJS is the older module system in JavaScript
-
-Module:
-is a container having multiple JS Files
-then allow export / import of modules to be in another JS files
