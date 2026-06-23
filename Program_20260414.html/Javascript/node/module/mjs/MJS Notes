@@ -1,0 +1,9 @@
+MJS - Module JS
+Also referref to as ESM - Exma script Module
+React completely uses MJS
+
+2 ways of using mjs
+1st way us to name the files as .mjs
+
+2nd way is to configure type in package .json
+and then use the .js for file naming convention

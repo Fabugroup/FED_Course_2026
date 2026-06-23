@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append Element Content</title>
+  </head>
+  <body>
+    <!-- create elements with some default content-->
+    <h1 id="head">Welcome</h1>
+    <p id="content">This is the intial text in the paragraph</p>
+
+    <script>
+      // fetch the content of an element using a varible
+
+      const data = document.getElementById("content");
+      data.innerText =
+        data.innerText + "\n This the appended text infused by JavaScript";
+
+      //alternative way of appending text to an element
+      data.innerText += "\n This the appended text infused by JavaScript";
+
+      // update the content of an element without a variable
+      document.getElementById("head").innerText += "to DOM";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types</title>
+  </head>
+  <body>
+    <!-- demo of available input types -->
+    <!-- every input type will have 3 elements type, id and name -->
+    <!-- name are not necessary to be added -->
+
+    <!-- text input -->
+    <!-- text input with any character -->
+    <label for="tt">Text type:</label>
+    <input type="text" id="tt" />
+    <br />
+    <!-- password type -->
+    <!-- when input using password, the text display will be hidden by dots -->
+    <label for="pp">Password Type:</label>
+    <input type="password" id="pp" />
+    <br />
+    <!-- number type -->
+    <!-- integer number -->
+    <label for="nn">Number Type:</label>
+    <input type="number" id="nn" />
+    <br />
+
+    <!-- radio button type -->
+    <!-- The use can choose only one option from teh available -->
+    <h2>Select Subscription Type:</h2>
+    <label for="free">Free:</label>
+    <input type="radio" name="stype" id="free" value="free" />
+
+    <label for="month">Monthly:</label>
+    <input type="radio" name="stype" id="month" value="monthly" />
+
+    <label for="year">Year:</label>
+    <input type="radio" name="stype" id="year" value="year" />
+
+    <!-- checkbox type -->
+    <!-- checkbox is like the radio button but you can select more than one choices -->
+    <h2>Select the Skills</h2>
+    <input type="checkbox" name="skill" id="html" value="html" />
+    <label for="html">HTML</label>
+    <br />
+    <input type="checkbox" name="skill" id="css" value="css" />
+    <label for="css">Css</label>
+    <br />
+    <input type="checkbox" name="skill" id="js" value="js" />
+    <label for="js">Javascript</label>
+
+    <!-- colour picker type -->
+    <br />
+    <br />
+    <label for="fav">Favorite Color:</label>
+    <input type="color" name="" id="fav" />
+
+    <!-- Date type -->
+    <br />
+    <br />
+    <label for="dt">Date of Birth:</label>
+    <input type="date" name="" id="dt" />
+
+    <!-- Progress value type -->
+    <br />
+    <br />
+    <label for="file">File Progress:</label>
+    <progress value="25" max="100" id="file"></progress>
+
+    <!-- Count type -->
+    <br />
+    <br />
+    <label for="count">Range Input:</label>
+    <input type="range" name="" id="count" min="1" max="100" step="10" />
+
+    <!-- Count type -->
+    <br />
+    <br />
+    <h2>About You</h2>
+    <label for="about">About You</label>
+    <textarea name="" id="about" cols="50" rows="5"></textarea>
+
+    <!-- Button type -->
+    <br />
+    <br />
+    <input type="button" name="" id="" onclick="" value="Click here" />
+    <!-- When submit button is used the data on form is sent to the URL mentioned in the action attribute to the form element-->
+    <input type="submit" value="Pay now" />
+    <!-- reset type is used to clear the values in form elements -->
+    <input type="reset" value="Clear" />
+  </body>
+</html>

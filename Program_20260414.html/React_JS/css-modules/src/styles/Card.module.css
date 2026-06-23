@@ -1,0 +1,48 @@
+/* Style for car container */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.cardContainer {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.description {
+  font-family: "Playwrite GB S Guides", cursive;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.button {
+  background-color: burlywood;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: rgb(211, 129, 21);
+  color: rgb(255, 255, 255);
+}

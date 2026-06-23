@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- row and column span -->
+    <!-- it is like merging row or column togethre -->
+
+    <table style="border: 1px solid black; border-collapse: collapse">
+      <thead>
+        <tr>
+          <th style="border: 1px solid blue">First Name</th>
+          <th style="border: 1px solid blue">Last Name</th>
+          <th style="border: 1px solid blue">Age</th>
+          <th style="border: 1px solid blue">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2" ; style="border: 1px solid blue">David</td>
+          <td style="border: 1px solid blue">55</td>
+          <td style="border: 1px solid blue">Singapore</td>
+        </tr>
+        <tr>
+          <td
+            colspan="4"
+            ;
+            style="
+              text-align: center;
+              border: 1px solid blue;
+              background-color: rgb(212, 255, 252);
+            "
+          >
+            SALES
+          </td>
+        </tr>
+
+        <tr>
+          <td style="border: 1px solid blue">Richard</td>
+          <td style="border: 1px solid blue">Tan</td>
+          <td style="border: 1px solid blue">40</td>
+          <!-- merging the next 3 rows within the same column together -->
+          <td rowspan="3" ; style="border: 1px solid blue; text-align: center">
+            Malaysia
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid blue">Susan</td>
+          <td style="border: 1px solid blue">Lee</td>
+          <td style="border: 1px solid blue">45</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid blue">Doanld</td>
+          <td style="border: 1px solid blue">Duck</td>
+          <td style="border: 1px solid blue">60</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

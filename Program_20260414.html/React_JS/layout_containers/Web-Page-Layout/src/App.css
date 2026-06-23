@@ -1,0 +1,40 @@
+.app {
+  transition: all 0.5s ease;
+}
+
+/* Define theme classes */
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Define theme classes */
+.light_main {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark_main {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Link styles within themes */
+.light .nav-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dark .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #6c63ff !important;
+}

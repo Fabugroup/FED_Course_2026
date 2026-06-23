@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        font-size: 50px;
+      }
+      .box {
+        background-color: cyan;
+        color: white;
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+
+      .rembox {
+        height: 1rem;
+        width: 1rem;
+      }
+
+      .pcbox {
+        height: 10%;
+        width: 10%;
+      }
+
+      /* actual way of using units */
+      /* vh and vw will reference itself to your vewport */
+      .vw {
+        height: 20vh;
+        width: 50vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box rembox">rem box</div>
+    /* percent to create a box has to have a reference area */
+    <div class="box pcbox">% box</div>
+    <div class="box vw"></div>
+  </body>
+</html>
+
+<!-- 
+The relative units
+1. em -- relative to parent
+2. rem -- relative to root
+3. % -- relative to parent
+4. vh -- view port height
+5. vw - view port to widht
+-->

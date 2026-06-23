@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Class</title>
+    <style>
+      .anyclass {
+        color: red;
+      }
+      .someclass {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- assig class to element -->
+    <h1 id="someid">Change Class colour (Blue)</h1>
+    <p id="anyid">This is a paragraph colour (red)</p>
+
+    <!-- change class -->
+    <h2 id="myid" class="anyclass">Change in Heading (red)</h2>
+    <p id="mypara" class="someclass">Change in Para (blue)</p>
+
+    <script>
+      document.getElementById("anyid").className = "someclass";
+      document.getElementById("someid").className = "anyclass";
+
+      document.getElementById("myid").className = "someclass";
+      document.getElementById("mypara").className = "anyclass";
+    </script>
+  </body>
+</html>

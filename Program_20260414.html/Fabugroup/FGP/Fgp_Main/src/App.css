@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.FG_Logo {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.FG_Title {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.FG_Text1 {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.FG_Text2 {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+
+    <style>
+      p::before {
+        content: "Hello ";
+      }
+      p::after {
+        content: ", Welcome";
+      }
+      p::selection {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element</h1>
+
+    <p>John</p>
+    <p>Alex</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident odit
+      cum quis voluptatibus, quidem quasi beatae atque corporis nobis eveniet
+      mollitia modi nihil adipisci enim id consectetur voluptates. Voluptates,
+      corrupti!
+    </p>
+  </body>
+</html>

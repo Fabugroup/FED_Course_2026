@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        gap: 10px;
+      }
+
+      header {
+        grid-area: header;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      aside {
+        grid-area: sidebar;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      main {
+        grid-area: main;
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Header Section</h1>
+      </header>
+      <aside>
+        <nav>
+          <p>Sidebar Section</p>
+        </nav>
+      </aside>
+      <main>
+        <section>
+          <h2>Main Content Section</h2>
+          <p>This is the primary area of the page.</p>
+        </section>
+      </main>
+      <footer>
+        <p>Footer Section</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        /* Linear gradient */
+
+        height: 20vh;
+        width: 50%;
+        margin: auto;
+        background-image: linear-gradient(
+          to right,
+          black 10%,
+          white 50%,
+          black 90%
+        );
+        /* 1st property
+         an be degree of an angle
+         to the top
+         to bottom
+         to right
+         to left */
+      }
+
+      .box1 {
+        /* Repeating Linear gradient */
+        height: 20vh;
+        width: 50%;
+        margin: auto;
+        background-image: repeating-linear-gradient(
+          90deg,
+          blue 0px,
+          yellow 10px,
+          blue 10px,
+          yellow 10px
+        );
+
+        margin-bottom: 5px;
+      }
+
+      .rad {
+        /* Radial gradient */
+        height: 20vh;
+        width: 60%;
+        margin: auto;
+        background-image: radial-gradient(circle, blue 20%, yellow);
+        margin-bottom: 5px;
+      }
+
+      .radrep {
+        /* Repeating Radial gradient */
+        height: 20vh;
+        width: 60%;
+        margin: auto;
+        background-image: repeating-radial-gradient(
+          ellipse,
+          green 0px,
+          green 20px,
+          yellow 20px,
+          yellow 40px,
+          purple 40px,
+          purple 60px
+        );
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="rad"></div>
+    <div class="radrep"></div>
+  </body>
+</html>

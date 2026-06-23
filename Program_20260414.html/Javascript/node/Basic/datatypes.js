@@ -1,0 +1,21 @@
+let numberType = 42;
+let stringType = "Hello";
+let booleanType = true;
+let underfinedType;
+let nullType = null;
+let arrayType = [1, 2, 3];
+let objedtType = { name: "John", age: 30 };
+let functionType = function (a, b) {};
+let symbolType = Symbol("unique");
+let bigIntType = 12345678901234567890;
+
+console.log("The type for Numbers is:" + typeof numberType);
+console.log("The type for Strings is:" + typeof stringType);
+console.log("The type for Boolean is:" + typeof booleanType);
+console.log("The type for Undefined is:" + typeof underfinedType);
+console.log("The type for null is:" + typeof nullType);
+console.log("The type for Array is:" + typeof arrayType);
+console.log("The type for Object is:" + typeof objedtType);
+console.log("The type for Function is:" + typeof functionType);
+console.log("The type for Symbol is:" + typeof symbolType);
+console.log("The type for Big Integer Type is:" + typeof bigIntType);

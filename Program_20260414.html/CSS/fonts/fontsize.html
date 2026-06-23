@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        font-size: 32px;
+      }
+
+      .pixel-default {
+        font-size: 16px;
+      }
+
+      .pixel-em {
+        /* em is relative to its parent */
+        /* so 1em is relative to the viewport which will be 16px */
+        font-size: 1.5em;
+      }
+
+      .pixel-rem {
+        /* rem is a relative em to the root */
+        font-size: 1.5rem;
+        /* 1.5 of 32px in this instance */
+      }
+    </style>
+  </head>
+  <body>
+    <p>I am the default font size but relative to the roots</p>
+    <p class="pixel-default">I am with the default font size of 16px</p>
+    <p>
+      <span class="pixel-em">I am with the default font size of 16px </span>
+    </p>
+    <p class="pixel-default">
+      <span class="pixel-em"
+        >I am with the default font size of 16px but 1.5em bigger
+      </span>
+    </p>
+    <p class="pixel-rem">I am with the rem font size of 16px</p>
+  </body>
+</html>

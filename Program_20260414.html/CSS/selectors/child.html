@@ -1,0 +1,27 @@
+``<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- This is useful for 2 different section whereby
+         you want to control the different colour or style -->
+    <style>
+      /* child selector */
+      /* only <p> element within the <div> will follow the style */
+      div > p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor, sit amet</p>
+      <p>Lorem ipsum dolor, sit amet</p>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 2 dropdown type 
+     1. Select - user can choose from a list of value
+     2. Datalist - extension to a input type text
+     -->
+
+    <!-- Select element -->
+    <h2>Drop down List</h2>
+    <h2>Choose your spoken language</h2>
+
+    <form action="">
+      <h2>Drop down List</h2>
+      <select name="lanf" id="lang">
+        <option value="english">English</option>
+        <option value="chinese">Chinese</option>
+        <option value="German">German</option>
+        <option value="French">French</option>
+        <option value="Hindi">Hindi</option>
+      </select>
+
+      <hr />
+
+      <!-- select  =element (single value selextion) -->
+      <h2>List for Selection</h2>
+
+      <select name="lanf" id="lang" multiple>
+        <option value="english">English</option>
+        <option value="chinese">Chinese</option>
+        <option value="German">German</option>
+        <option value="French">French</option>
+        <option value="Hindi">Hindi</option>
+      </select>
+
+      <hr />
+      <h2>Data List</h2>
+      <!-- datalist -->
+      <!-- used to suggest the user about the possinle values as he/she is typing -->
+      <!-- <h2> What is favourite fruit -->
+
+      <label for="fruit">Which fruit do you like</label>
+      <input list="x" id="fruit" />
+      <datalist id="x">
+        <option value="apple"></option>
+        <option value="orange"></option>
+        <option value="banana"></option>
+        <option value="grapes"></option>
+      </datalist>
+    </form>
+  </body>
+</html>

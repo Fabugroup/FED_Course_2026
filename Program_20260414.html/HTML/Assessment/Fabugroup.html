@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabugroup</title>
+
+    <style>
+      /* Container just for contrast */
+      body {
+        background-color: #666666;
+        /*  display: flex; */
+      }
+
+      .FGP_gradient-text {
+        /* 1. Define the gradient */
+        background: linear-gradient(
+          to right,
+          #ff0000 60%,
+          #ff7f00 70%,
+          #ffff00 75%,
+          #00ff00 80%,
+          #0000ff 85%,
+          #4b0082 90%,
+          #8b00ff 95%,
+          #ff00ff 100%
+        );
+
+        /* 2. Clip the background to the text */
+        -webkit-background-clip: text; /* For Safari/Chrome */
+        background-clip: text; /* Standard syntax */
+
+        /* 3. Make the text see-through */
+        color: transparent;
+
+        /* Extra styling for visibility */
+        font-family: Verdana, sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 0px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="FGP_gradient-text">FABUGROUP</h1>
+    <br />
+    <div><p>Welcome to Fabugroup</p></div>
+  </body>
+</html>
