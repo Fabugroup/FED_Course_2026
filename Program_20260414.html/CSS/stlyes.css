@@ -1,0 +1,17 @@
+/*
+This is a external css file
+Contains only style attributes
+no html allowed
+saved as .css
+no style tag required / allowed
+*/
+
+p {
+  color: blue;
+  background-color: bisque;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
