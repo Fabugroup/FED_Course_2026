@@ -1,0 +1,225 @@
+/* ========================================
+   FGS Contact Page — Fgs_contact.css
+   ======================================== */
+
+.fgs-contact-shell {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  padding: 40px 60px;
+}
+
+.fgs-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+.fgs-contact-header {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.fgs-contact-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #ffffff 0%, #4a9eff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 8px;
+}
+
+.fgs-contact-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* --- Grid Layout --- */
+.fgs-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* --- Contact Cards --- */
+.fgs-contact-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fgs-contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.fgs-contact-card:hover {
+  border-color: #4a9eff55;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(74, 158, 255, 0.08);
+}
+
+.fgs-contact-card:hover::before {
+  opacity: 1;
+}
+
+.fgs-contact-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(74, 158, 255, 0.1);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: #4a9eff;
+}
+
+.fgs-contact-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.fgs-contact-card-desc {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+/* Contact details within card */
+.fgs-contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.fgs-contact-detail i {
+  color: #4a9eff;
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.fgs-contact-detail a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.fgs-contact-detail a:hover {
+  color: #4a9eff;
+}
+
+.fgs-contact-detail span {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* --- Contact Buttons --- */
+.fgs-contact-btn {
+  padding: 10px 20px;
+  background: rgba(74, 158, 255, 0.1);
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  border-radius: 8px;
+  color: #4a9eff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.03em;
+  width: 100%;
+  text-align: center;
+}
+
+.fgs-contact-btn:hover {
+  background: rgba(74, 158, 255, 0.2);
+  border-color: rgba(74, 158, 255, 0.6);
+  transform: scale(1.02);
+}
+
+/* --- Footer --- */
+.fgs-contact-footer {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.fgs-contact-footer p {
+  font-size: 12px;
+  color: #444;
+  margin: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .fgs-contact-shell {
+    padding: 30px 40px;
+  }
+
+  .fgs-contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .fgs-contact-shell {
+    padding: 24px 20px;
+  }
+
+  .fgs-contact-header h1 {
+    font-size: 32px;
+  }
+
+  .fgs-contact-header {
+    margin-bottom: 32px;
+  }
+
+  .fgs-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fgs-contact-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fgs-contact-shell {
+    padding: 16px 12px;
+  }
+
+  .fgs-contact-header h1 {
+    font-size: 26px;
+  }
+
+  .fgs-contact-subtitle {
+    font-size: 14px;
+  }
+}

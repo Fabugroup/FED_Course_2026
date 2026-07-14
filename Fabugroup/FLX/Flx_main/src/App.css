@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Inter", "Segoe UI", sans-serif;
+
+  background: black;
+}
+
+button {
+  margin-top: 35px;
+
+  padding: 14px 36px;
+
+  border-radius: 999px;
+
+  border: none;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  background: white;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 70px;
+
+  margin: 0;
+
+  letter-spacing: 3px;
+}
+
+.hero p {
+  color: #d0d0d0;
+
+  font-size: 22px;
+}

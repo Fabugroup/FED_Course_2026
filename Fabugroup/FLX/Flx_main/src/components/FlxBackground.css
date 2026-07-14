@@ -1,0 +1,219 @@
+/* ============================================================
+   FLX BACKGROUND
+   Designed for PixelCanvas.jsx
+   ============================================================ */
+
+.flx-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================================================
+   Base Gradient
+   ============================================================ */
+
+/* .gradient-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 40%,
+    #050505 52%,
+    #121212 60%,
+    #242424 70%,
+    #404040 82%,
+    #7a7a7a 100%
+  );
+} */
+
+/* .gradient-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 46%,
+    #050505 50%,
+    #101010 56%,
+    #1d1d1d 64%,
+    #2f2f2f 73%,
+    #505050 84%,
+    #8a8a8a 94%,
+    #bdbdbd 100%
+  );
+} */
+
+.gradient-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* background:
+    linear-gradient(90deg, #000 0%, #000 50%, transparent 100%),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      #101010 65%,
+      #2b2b2b 72%,
+      #5d5d5d 86%,
+      #c8c8c8 100%
+    ); */
+
+  background:
+    linear-gradient(90deg, #000 0%, #000 48%, transparent 100%),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      #111 58%,
+      #2f2f2f 70%,
+      #5b5b5b 84%,
+      #d0d0d0 100%
+    );
+}
+
+/* ============================================================
+   Canvas Layer
+   ============================================================ */
+
+.pixel-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.95;
+  filter: blur(0.35px) contrast(125%) brightness(115%);
+}
+
+/* ============================================================
+   Soft Glow
+   ============================================================ */
+
+.pixel-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* ============================================================
+   Right Edge Glow
+   ============================================================ */
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(255, 255, 255, 0.05),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 55%,
+      rgba(0, 0, 0, 0.18) 78%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+}
+
+/* ============================================================
+   Hero Content
+   ============================================================ */
+.content-layer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-family: "Serpentine-Light";
+}
+
+/* ============================================================
+   Title
+   ============================================================ */
+.content-layer h1 {
+  margin: 0;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 1.05;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* ============================================================
+   SubTitle
+   ============================================================ */
+.content-layer p {
+  margin-top: 18px;
+  font-size: 22px;
+  color: #d5d5d5;
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   Button
+   ============================================================ */
+.content-layer button {
+  margin-top: 45px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 999px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+/* ============================================================
+   Button Hover
+   ============================================================ */
+.content-layer button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 900px) {
+  .content-layer h1 {
+    font-size: 52px;
+  }
+
+  .content-layer p {
+    font-size: 18px;
+  }
+}
+
+/* ============================================================
+   Serpentine-Light font
+   ============================================================ */
+@font-face {
+  font-family: "Serpentine-Light";
+  src:
+    url("../assets/fonts/Serpentine-Light.ttf.woff") format("woff"),
+    url("../assets/fonts/Serpentine-Light.ttf.svg#Serpentine-Light")
+      format("svg"),
+    url("../assets/fonts/Serpentine-Light.ttf.eot"),
+    url("../assets/fonts/Serpentine-Light.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
